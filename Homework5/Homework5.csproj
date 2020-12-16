@@ -6,6 +6,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyName>Homework5</AssemblyName>
     <RootNamespace>Homework5</RootNamespace>
+    <UserSecretsId>b5d1f582-ce82-4fc1-bf09-514e35078ce1</UserSecretsId>
   </PropertyGroup>
     
   

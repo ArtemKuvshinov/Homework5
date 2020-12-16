@@ -68,6 +68,7 @@ namespace Homework5.Controllers
         /// </summary>
         /// <returns>Измененная сущность Здание.</returns>
         [HttpPut]
+        [ValidateAntiForgeryToken]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(BuildingResponse))]
         public IActionResult Put(UpdateBuildingRequest request, CancellationToken cancellationToken)
         {
@@ -83,6 +84,7 @@ namespace Homework5.Controllers
         /// <param name="newBuilding">Новая сущность "Здание"</param>
         /// <returns></returns>
         [HttpPost]
+        [ValidateAntiForgeryToken]
         [ProducesResponseType(typeof(BuildingResponse), 200)]
         public IActionResult Post(CreateBuildingRequest request)
         {
@@ -95,6 +97,7 @@ namespace Homework5.Controllers
         /// Удаление сущностей Здание.
         /// </summary>
         [HttpDelete]
+        [ValidateAntiForgeryToken]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public IActionResult Delete(CancellationToken cancellationToken, params long[] ids)
         {

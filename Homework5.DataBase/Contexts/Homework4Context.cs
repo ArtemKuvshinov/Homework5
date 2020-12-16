@@ -15,8 +15,6 @@ namespace Homework5.DAL.Contexts
         /// <param name="options">Опции для конфигурации контекста.</param>
         public Homework4Context(DbContextOptions options) : base(options)
         {
-           //Database.EnsureDeleted();
-           //Database.EnsureCreated();
         }
 
         /// <summary>
@@ -44,7 +42,7 @@ namespace Homework5.DAL.Contexts
         public DbSet<Material> Materials { get; set; }
 
         /// <summary>
-        /// Маnериалы используемые в конкретном здании.
+        /// Материалы используемые в конкретном здании.
         /// </summary>
         public DbSet<BuildingСomposition> BuildingСompositions { get; set; }
 

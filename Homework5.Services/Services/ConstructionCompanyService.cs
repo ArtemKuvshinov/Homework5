@@ -29,7 +29,6 @@ namespace Homework5.Services.Services
             try
             {
                 _unitOfWork.ConstructionCompany.Create(dto);
-                _unitOfWork.Save();
                 _unitOfWork.CommitTrasaction();
             }
             catch (Exception ex)
@@ -44,8 +43,7 @@ namespace Homework5.Services.Services
             _unitOfWork.BeginTrasaction();
             try
             {
-                _unitOfWork.ConstructionCompany.Delete(ids);               
-                _unitOfWork.Save();
+                _unitOfWork.ConstructionCompany.Delete(ids);
                 _unitOfWork.CommitTrasaction();
             }
             catch (Exception ex)
@@ -73,7 +71,6 @@ namespace Homework5.Services.Services
             try
             {
                 _unitOfWork.ConstructionCompany.Update(dto);
-                _unitOfWork.Save();
                 _unitOfWork.CommitTrasaction();
             }
             catch (Exception ex)
